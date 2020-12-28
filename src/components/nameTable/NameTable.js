@@ -45,7 +45,6 @@ const NameTable = (props) => {
   };
   return (
     <table>
-      <caption>Products</caption>
       <thead>
         <tr>
           <th>

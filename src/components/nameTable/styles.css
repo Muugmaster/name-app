@@ -1,15 +1,32 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "open sans", sans-serif;
   font-size: 16px;
 }
 
+.container {
+  margin: auto;
+  width: 75%;
+}
+
+.container h1 {
+  text-align: center;
+  margin: 1rem 0;
+} */
+
 table {
-  width: 100%;
+  margin: auto;
+  width: 50%;
   border-collapse: collapse;
 }
 
 thead th {
-  text-align: left;
+  text-align: center;
   border-bottom: 2px solid black;
 }
 
@@ -19,23 +36,28 @@ thead button {
   font-family: inherit;
   font-weight: 700;
   font-size: inherit;
-  padding: 0.5em;
-  margin-bottom: 1px;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+thead button:hover {
+  cursor: pointer;
 }
 
 thead button.ascending::after {
-  content: "👇";
+  content: "👆";
   display: inline-block;
-  margin-left: 1em;
+  margin-left: 0.5rem;
 }
 
 thead button.descending::after {
-  content: "☝️";
+  content: "👇";
   display: inline-block;
-  margin-left: 1em;
+  margin-left: 0.5rem;
 }
 
 tbody td {
+  text-align: center;
   padding: 0.5em;
   border-bottom: 1px solid #ccc;
 }

@@ -1,9 +1,15 @@
-import NameTable from './components/nameTable/NameTable';
-import { names } from './data/names'; 
+import SearchBar from './components/searchBar/SearchBar';
+import Totalnames from './components/totalnames/Totalnames';
+
+import './styles.css';
 
 function App() {
   return (
-    <NameTable names={names.names} />
+    <div className="container">
+      <h1>Solita Names App</h1>
+      <Totalnames />
+      <SearchBar />
+    </div>
   );
 }
 
